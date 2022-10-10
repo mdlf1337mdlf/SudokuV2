@@ -45,7 +45,29 @@ def bloc(S:list,i:int,j:int)->list:
     >>> bloc(S,3,4)
     [6,9,1,5,8]
     """
-      heghfsdidsi
+        l = []
+    # Test
+    if a <= 8:
+        i = 6
+    if a <= 5:
+        i = 3
+    if a <= 2:
+        i = 0
+
+    # Test colonne
+    if j <= 2:
+        j = 0
+    if j <= 5:
+        j = 3
+    if j <= 8:
+        j = 6
+    for i in range(i,i + 3):
+
+
+
+    for j in range(3):
+        l.append(colonne(S,j))
+    return l
     
 
 
