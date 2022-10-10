@@ -1,2 +1,3 @@
 # SudokuV2
-sudoku by sulheim and mdlf
+Sudoku NSI
+by mdlf and by imafighter
