@@ -37,7 +37,7 @@ def ligne(S:list,i:int)->list:
             l.append(S[i][j])
     return l
 
-def bloc(S:list,i:int,j:int)->list:
+def bloc(S:list,i:int,b:int)->list:
     """
     Retourne la liste des chiffres de 1 à 9 qui apparaissent dans le bloc 3×3 auquel appartient
     la case de la ligne 𝑖 et de la colonne 𝑗
@@ -55,12 +55,12 @@ def bloc(S:list,i:int,j:int)->list:
         i = 0
 
     # Test colonne
-    if j <= 2:
-        j = 0
-    if j <= 5:
-        j = 3
-    if j <= 8:
+    if b <= 8:
         j = 6
+    if b <= 5:
+        j = 3
+    if b <= 2:
+        j = 0
     for i in range(i,i + 3):
 
 
