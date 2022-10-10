@@ -45,6 +45,7 @@ def bloc(S:list,i:int,j:int)->list:
     >>> bloc(S,3,4)
     [6,9,1,5,8]
     """
+    
 
 
 
