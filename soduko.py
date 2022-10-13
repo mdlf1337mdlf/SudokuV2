@@ -72,7 +72,24 @@ def bloc(S:list,a:int,b:int)->list:
     return l
 
 
-
+def possibles(S:list,i:int,j:int)->list:
+    """
+    Retourne la liste des chiffres de 1 à 9 que l'on peut écrire dans la case  de la ligne i et de la colonne j
+    (en tenant compte des règles du jeu)
+    Test:
+    >>> possibles(S,0,0)
+    [2,3,4,6,9]
+    """
+    NOMBRES = [1, 2, 3, 4, 5, 6, 7, 8 , 9]
+    l = ligne(i)
+    c = colonne(j)
+    temp = []
+    for x in l:
+        if x in NOMBRES:
+            temp.append(x)
+    for y in c:
+        if c in NOMBRES and c not in temp:
+            temp.append()
 
 
 
