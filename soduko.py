@@ -80,35 +80,17 @@ def possibles(S:list,i:int,j:int)->list:
     >>> possibles(S,0,0)
     [2,3,4,6,9]
     """
-    NOMBRES = [1, 2, 3, 4, 5, 6, 7, 8 , 9]
-    l = ligne(i)
-    c = colonne(j)
-    temp = []
-    for x in l:
-        if x in NOMBRES:
-            temp.append(x)
-    for y in c:
-        if c in NOMBRES and c not in temp:
-            temp.append()
-            
-   ### J'ai essayé de faire ça mais j'ai pas dutout reussi si tu pense pouvoir utiliser ça comme base si c'est plus simple pour toi voila vu que je sais pas si tu
-   ### l'a reussi mais j'ai essayé de laisser une trace ecrite de mon taf
-   def possibles(S:list,i:int,j:int)->list:
-    """
-    Retourne la liste des chiffres de 1 à 9 que l'on peut écrire dans la case  de la ligne i et de la colonne j
-    (en tenant compte des règles du jeu)
-    Test:
-    >>> possibles(S,0,0)
-    [2,3,4,6,9]
-    """
     N = [1, 2, 3, 4, 5, 6, 7, 8 , 9]
     l = ligne(S,i)
     c = colonne(S,j)
-    res = []
-    for i in N:
-        if l != N:
-            return N[i]
+    setN = set(N)
+    setL = set(l)
+    setC = set(c)
 
+    res = list(setN - setL - setC)
+    print(res)
+
+### Tien voila mon possible j'ai reussi à le faire lvdm il marche je suis trop heureux il est 2H du mat et j'ai ptn de reussi GUIGUI ON VA Y ARRIVER !!!!!
 
 
 
