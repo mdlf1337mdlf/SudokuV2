@@ -121,6 +121,32 @@ def suivante(i:int,j:int)->tuple:
 ### En vrai on a fait un taf de dingue à deux donc niquel 
 
 
+## Réponse Exercice 7:
+
+# 1. Booléans , True or False.
+
+# 2. Je sais pas
+
+# 3. Au debut au if i == 9:
+
+# 4. Je sais pas
+
+
+def resoudre(S:list,i:int,j:int):
+    """
+    Indique si la grille passée en paramètre est globalement résolue à partir de la case (i,j)
+    """
+    p = possibles(S,i,j)
+    if i == 9:
+        print("La grille est globalement résolue")
+    elif i == i and j == j:
+        return p + 1
+    else:
+        for i in k:
+            return 
+         
+ ## Pour les reponse d'exercice 7 et le truc résoudre j'ai pas reussi donc voila j'ai essayé de tout faire dsl
+
 
 
 
