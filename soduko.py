@@ -92,6 +92,34 @@ def possibles(S:list,i:int,j:int)->list:
 
 ### Tien voila mon possible j'ai reussi à le faire lvdm il marche je suis trop heureux il est 2H du mat et j'ai ptn de reussi GUIGUI ON VA Y ARRIVER !!!!!
 
+def suivante(i:int,j:int)->tuple:
+    """
+    Reçoit en paramètre la ligne i et la colonne j et qui renvoie le tuple (ligne,colonne) de la case suivante.
+    Test :
+    >>> suivante(0,0),suivante(0,8),suivante(8,8)
+    (0,1),(1,0),(9,0)
+    """
+    l = ligne(S,i)
+    c = colonne(S,j)
+
+    if i > 9:
+        print("Action impossible, recommencer")
+
+
+    if j > 8:
+        print("Action impossible, recommencer")
+    elif j == 8:
+        j = 0
+        i = i + 1
+    elif j < 8:
+        j = j+1
+
+    print('(',i,',',j,')')
+   
+  
+### Tien mon pote j'ai aussi fait suivante il est 2h06 du mat et jsuis crevé si sa te dérange pas de faire le reste jveux bien ou jferais tkt juste dit moi stp
+### En vrai on a fait un taf de dingue à deux donc niquel 
+
 
 
 
