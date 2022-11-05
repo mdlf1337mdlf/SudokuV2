@@ -166,7 +166,7 @@ print(resoudre(S,1,1))
 print(S) 
 
 
-
+# EMC https://www.canva.com/design/DAFOVgHSPuY/6Fp2I1ipXb3L7ZZf27VTCQ/edit?utm_content=DAFOVgHSPuY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
 
