@@ -147,7 +147,23 @@ def resoudre(S:list,i:int,j:int):
          
  ## Pour les reponse d'exercice 7 et le truc résoudre j'ai pas reussi donc voila j'ai essayé de tout faire dsl
 
-
+def resoudre(Grille:list,i:int,j:int):
+    """Resolution recursive en place de la Grille à partir de la case (i,j) """
+    if i == 9:
+        return ("La Grille est globalement résolue")
+    elif Grille[i][j] != 0:
+        resoudre(Grille,suivante(i,j)[0],suivante(i,j)[1])
+    elif Grille[i][j] == 0:
+        for k in possibles(Grille,i,j):
+            Grille[i][j] = k
+            if suivante(i,j) == (9,9):
+                return ("La Grille est globalement complétée")
+        Grille[i][j] = 0
+        return ("La Grille n'est pas globalement résolue")
+            
+# Test
+print(resoudre(S,1,1))
+print(S) 
 
 
 
