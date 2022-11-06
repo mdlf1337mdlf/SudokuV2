@@ -80,14 +80,19 @@ def possibles(S:list,i:int,j:int)->list:
     >>> possibles(S,0,0)
     [2,3,4,6,9]
     """
+
     N = [1, 2, 3, 4, 5, 6, 7, 8 , 9]
     l = ligne(S,i)
     c = colonne(S,j)
+    blo = bloc(S,i,j)
     setN = set(N)
     setL = set(l)
     setC = set(c)
+    setBlo = set(blo)
 
-    res = list(setN - setL - setC)
+    res = list(setN - setL - setC - setBlo)
+
+
     print(res)
 
 ### Tien voila mon possible j'ai reussi à le faire lvdm il marche je suis trop heureux il est 2H du mat et j'ai ptn de reussi GUIGUI ON VA Y ARRIVER !!!!!
