@@ -93,7 +93,7 @@ def possibles(S:list,i:int,j:int)->list:
     res = list(setN - setL - setC - setBlo)
 
 
-    print(res)
+    return res
 
 ### Tien voila mon possible j'ai reussi à le faire lvdm il marche je suis trop heureux il est 2H du mat et j'ai ptn de reussi GUIGUI ON VA Y ARRIVER !!!!!
 
@@ -119,7 +119,7 @@ def suivante(i:int,j:int)->tuple:
     elif j < 8:
         j = j+1
 
-    print('(',i,',',j,')')
+    return (i,j)
    
   
 ### Tien mon pote j'ai aussi fait suivante il est 2h06 du mat et jsuis crevé si sa te dérange pas de faire le reste jveux bien ou jferais tkt juste dit moi stp
